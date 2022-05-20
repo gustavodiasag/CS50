@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', function() {
+
+                let correct = document.querySelector('.correct');
+                correct.addEventListener('click', function() {
+                    correct.style.backgroundColor = 'green';
+                    document.querySelector('#feedback1').innerHTML = 'Correct :D';
+
+                });
+                let incorrects = document.querySelectorAll('.incorrect');
+                for (let i = 0; i < incorrects.length; i++) {
+                    incorrects[i].addEventListener('click', function() {
+                        incorrects[i].style.backgroundColor = 'red';
+                        document.querySelector('#feedback1').innerHTML = 'Incorrect :(';
+                    });
+                }
+
+                document.querySelector('#check').addEventListener('click', function() {
+                    let input = document.querySelector('input');
+                    if (input.value == 'Vespertine') {
+                        input.style.backgroundColor = 'green';
+                        document.querySelector('#feedback2').innerHTML = 'Correct :D';
+                    } else {
+                        input.style.backgroundColor = 'red';
+                        document.querySelector('#feedback2').innerHTML = 'Incorrect :(';
+                    }
+                });
+            });
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <hr>
+                <h3>What album does not belong to the Radiohead's discography? </h3>
+                <button class='incorrect'>In Rainbows</button>
+                <button class='correct'>MBDTF</button>
+                <button class='incorrect'>OK Computer</button>
+                <button class='incorrect'>Kid A</button>
+                <button class='incorrect'>Amnesiac</button>
+                <button class='incorrect'>A Moon Shaped Pool</button>
+                <button class='incorrect'>Pablo Honey</button>
+                <p id='feedback1'></p>
+
+            </div>
+            <div class="section">
+                <hr>
+                <h3>Witch one of Bjork's albums is her highest rated project?</h3>
+                <input type='text'></input>
+                <button id='check'>Check</button>
+                <p id='feedback2'></p>
+            </div>
+        </div>
+    </body>
+</html>

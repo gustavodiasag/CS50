@@ -1,0 +1,22 @@
+sort1 uses: Bubble Sort
+
+How do you know?:
+
+After sort2 was defined, doing a second experiment applying only sorts 1 and 3 to a sorted line of
+values (sorted10000.txt), sort1 was the fastest one to provide the result. Since the omega notation
+of a bubble sort's running time is considerably lower than the one of selection sort, is correct
+to say that sort1 represents bubble sort.
+
+sort2 uses: Merge Sort
+
+How do you know?:
+
+When first comparing all the algorithms using the same shuffled line of values (random100000.txt),
+sort2 operated with the least amount of time therefore being the most efficient one.
+
+sort3 uses: Selection Sort
+
+How do you know?:
+
+Sort3 had the highest running time among all 3 algorithms on both experiments.
+
