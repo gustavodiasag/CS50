@@ -1,0 +1,177 @@
+body {
+  background-color: #ABCCAE;
+  color: black;
+}
+
+#title {
+  text-align: left;
+  padding: 20px 20px 20px 25px;
+  font-size: 50px;
+}
+
+nav {
+  position: absolute;
+  left: 22em;
+  top: 2.8em;
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ABCCAE;
+  left: 0;
+  width: 150px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  display: block;
+  color: black;
+  padding: 7px;
+}
+
+.dropdown-content a:hover {
+  background-color: #9CBA9F;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#nav {
+  padding: 15px;
+  color: black;
+  font-size: 20px;
+}
+
+#nav:hover {
+  text-decoration: none;
+}
+
+main {
+  font-size: 10px;
+  font-family: Tahoma;
+  z-index: 0;
+}
+
+#main {
+  margin: 15px;
+  padding: 15px;
+}
+
+#img-div {
+  text-align: center;
+  padding: 20px 20px;
+  background-color: white;
+}
+
+#image-caption {
+  font-size: 1.6em;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  color: #424242;
+}
+
+img {
+  display: block;
+  width: 1000px;
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.tribute-info {
+  padding: 50px;
+  font-size: 2em;
+  text-align: justify;
+  background-color: white;
+  max-width: 100%;
+}
+
+h3 {
+  padding: 10px 0 10px 0;
+}
+
+article {
+  width: 800px;
+  height: auto;
+  padding: 20px 0px 10px 0px;
+}
+
+#discography a {
+  color: #7A917C;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  padding: 10px 0 10px 0;
+}
+
+h6 {
+  color: #424242;
+  padding: 10px 0 10px 0;
+}
+
+hr {
+  color: transparent;
+}
+
+h4 {
+  padding-top: 20px;
+}
+
+#other-pages1 {
+  position: relative;
+  height: 300px;
+}
+#other-pages2 {
+  position: relative;
+  height: 500px;
+}
+
+.description {
+  position: fixed;
+}
+
+#suncover {
+  height: 192px;
+  width: auto;
+  margin: 0;
+}
+
+#sun-caption {
+  font-size: 16px;
+  text-align: center;
+}
+
+#tracklist {
+  height: 192px;
+  width: auto;
+  left: 25%;
+  top: 20%;
+}
+
+ol li strong{
+  color: #7A917C;
+  padding-left: 5px;
+}
+
+
